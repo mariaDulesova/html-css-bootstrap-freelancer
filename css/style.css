@@ -1,11 +1,6 @@
 /* Debug Do not forget to delete*/
 
 
-#contact-me .col-xs-8{
-    height: 400px;
-    border: 1px solid black; 
-}
-
 .ms-useful-links .col-xs-12 {
     height: 200px;
     border: 1px solid white; 
@@ -156,6 +151,16 @@ h3 {
     color: #2c3f4f;  
 }
 
+.ms-portfolio-item {
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.ms-portfolio-item img{ 
+    width: 100%;
+    border-radius: 10px;
+}
+
 #portfolio,
 #about,
 #contact-me {
@@ -179,19 +184,28 @@ h3 {
 
 }
 
+/* Contact me */
 
-
-
-
-.ms-portfolio-item {
-    margin: 15px 0;
-    border-radius: 10px;
+.ms-btn-green{
+    background-color: #1abc9b;
+    color: white;
+    transition: all 0.2s;
+}
+.ms-btn-green:hover{
+    background-color: #159a80;
+    border-color: #148f77;
+}
+.form-control::placeholder {
+    color:#2c3f4f;
 }
 
-.ms-portfolio-item img{ 
-    width: 100%;
-    border-radius: 10px;
-}
+ /* .form-control{
+    border: 0;
+} */
+
+
+
+
 
 
 
