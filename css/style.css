@@ -1,9 +1,5 @@
 /* Debug Do not forget to delete*/
 
-#about .col-xs-8 {
-    height: 250px;
-    border: 1px solid black; 
-}
 
 #contact-me .col-xs-8{
     height: 400px;
@@ -38,35 +34,67 @@ h3 {
     font-weight: 700;
 }
 
-.divider-line{
-    background-color: white;
-    width: 100%;
-    height: 3px;
-}
 
-.ms-white-line {
+/* Solution One Star*/
+.ms-line {
     position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+
 }
 
-
-/* .ms-white-line::before, */
-
-.ms-white-line::after{
-    width: 10%;
+.ms-line::before {
+    width: 13%;
     position: absolute;
     content: "";
     border-top: 3px solid white;
     top: 50%;
+    left: 35%;
 }
+
+.ms-line::after {
+    width: 13%;
+    position: absolute;
+    content: "";
+    border-top: 3px solid white;
+    top: 50%;
+    right: 35%;
+} 
+
+#portfolio .ms-line::before,
+#portfolio .ms-line::after,
+#contact-me .ms-line::before,
+#contact-me .ms-line::after{
+    border-top: 3px solid #2c3f4f; 
+}
+
+/* Solution Two Star */
+/* .ms-line-container {
+    line-height: 35px;
+}
+.ms-gliphicon-star {
+    vertical-align: middle;
+}
+
+.ms-line-two {
+    display: inline-block;
+    border-top: 3px solid white;
+    width: 10%;
+    vertical-align: middle;
+} */
+
 
 #header-jambotron,
 #about {
     background-color: #1abc9b;
 }
+
+.ms-glyphicon-star {
+    font-size: 30px;
+}
 .ms-text-white {
     color:white;
 }
-
 .ms-copyright {
     background-color: #2c3f4f;
 }
@@ -120,20 +148,40 @@ h3 {
     height: 250px;
 }
 
-.ms-glyphicon-star {
-    font-size: 35px;
-}
-
-
-
-
 
 
 /* Main */
 #portfolio,
 #contact-me {
-    color: #2c3f4f;
+    color: #2c3f4f;  
 }
+
+#portfolio,
+#about,
+#contact-me {
+    padding: 30px 0;
+}
+
+.ms-btn-container{
+    text-align: center;
+}
+
+.ms-btn-transparent {
+    margin: 40px 0;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+
+.ms-btn-transparent:hover{
+    background-color: white;
+    color: #2c3f4f;
+
+}
+
+
+
+
 
 .ms-portfolio-item {
     margin: 15px 0;
