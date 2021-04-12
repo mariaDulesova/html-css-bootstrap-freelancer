@@ -1,7 +1,5 @@
 /* Debug Do not forget to delete*/
-nav {
-    height: 100px; 
-}
+
 
 nav .col-xs-6 {
     height:100px;
@@ -27,12 +25,13 @@ nav .col-xs-6 {
     border: 1px solid black; 
 }
 
-.useful-links .col-xs-12 {
+.ms-useful-links .col-xs-12 {
     height: 200px;
     border: 1px solid white; 
 }
-.copyright {
+.ms-copyright {
     height: 100px;
+    line-height: 100px;
 }
 
 /* /Debug */
@@ -40,29 +39,102 @@ nav .col-xs-6 {
 
 
 /* General */
+
 body {
-    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 }
+
 #header-jambotron,
 #about {
     background-color: #1abc9b;
 }
-.text-white {
+.ms-text-white {
     color:white;
 }
 
-/* Header */
-nav,
-.copyright {
+.ms-copyright {
     background-color: #2c3f4f;
 }
+
+
+/* Header */
+/* NAV */
+.ms-navbar {
+    margin-bottom: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 10px 0;
+    background-color: #2c3f4f;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.ms-navbar .navbar-brand,
+.ms-navbar .navbar-nav>li>a{
+    text-transform: uppercase;
+    color: white;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.ms-navbar .navbar-toggle {
+    border-color: rgb(136,136,136);
+}
+.ms-navbar .navbar-toggle .icon-bar{
+    background-color: rgb(136,136,136);
+}
+
+
+.ms-navbar .navbar-toggle:focus,
+.ms-navbar .navbar-toggle:hover {
+    background-color: #2c3f4f;
+} 
+.ms-navbar .navbar-nav>li>a:focus, 
+.ms-navbar .navbar-nav>li>a:hover {
+    color: #1abc9b;
+    background-color: transparent;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+
+
+
+
+
+/* Main */
+#portfolio,
+#contact-me {
+    color: #2c3f4f;
+}
+
+.ms-portfolio-item {
+    margin: 15px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 
 
 /* Footer */
 
 footer
-.useful-links{
+.ms-useful-links{
     background-color: #3b546e;  
+}
+.ms-copyright p{
+
+    vertical-align: middle;
 }
 
 

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap Freelancer</title>
 </head>
@@ -12,43 +15,82 @@
 
     <!-- Header -->
     <header>
-        <nav>
+        <nav class="navbar navbar-fixed-top ms-navbar">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-6"></div>
-                    <div class="col-xs-6"></div>
+              <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Start Bootstrap</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="" ><a href="#portfolio">Portfolio <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#contact-me">Contact</a></li>
+                      
+                    </ul>
                 </div>
             </div>
+
         </nav>
 
-        <section id="header-jambotron" class="text-white">
-            <div class="container">
+        <section id="header-jambotron" class="ms-text-white text-center">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
                     </div>
                 </div>
-            </div> 
+            </div>  Quando tutto e' in centro ed elementi sono uno sotto l'altro, non e' necessario usare la classe col-12 -->
         </section>
     </header>
     <!-- /Header -->
 
     <!-- Main -->
     <section id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 class="text-center">Portfolio</h2>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="ms-portfolio-item">
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="ms-portfolio-item">
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="ms-portfolio-item">
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="ms-portfolio-item">
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="ms-portfolio-item">
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="ms-portfolio-item">
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
     </section>
-    <section id="about" class="text-white">
-        <h2>About</h2>
+    <section id="about" class="ms-text-white">
+        <h2 class="text-center">About</h2>
         <div class="container">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-sm-4  col-md-5 col-md-offset-1"></div>
@@ -58,7 +100,7 @@
     </section>
 
     <section id="contact-me">
-        <h2>Contact me</h2>
+        <h2 class="text-center">Contact me</h2>
         <div class="container">
             <div class="row">
                 <div class="col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1">
@@ -69,22 +111,28 @@
     <!-- /Main -->
 
     <!-- Footer -->
-    <footer>
-        <section class="useful-links text-white">
+    <footer class="text-center">
+        <section class="ms-useful-links ms-text-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4"></div>
-                    <div class="col-xs-12 col-sm-4"></div>
-                    <div class="col-xs-12 col-sm-4"></div>
+                    <div class="col-xs-12 col-md-4"></div>
+                    <div class="col-xs-12 col-md-4"></div>
+                    <div class="col-xs-12 col-md-4"></div>
                 </div>
             </div>
     
         </section>
-        <section class="copyright text-white">
+        <section class="ms-copyright ms-text-white">
             <p>Copyright &#64; Your Website 2019</p>
         </section>
     </footer>
     <!-- /Footer -->
     
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
